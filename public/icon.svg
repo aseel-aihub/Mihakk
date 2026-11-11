@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 220" width="200" height="220" role="img" aria-label="Mihakk logo">
+<path d="M100 8 L184 38 V108 C184 158 148 192 100 212 C52 192 16 158 16 108 V38 Z" fill="#1B1F23"/>
+<path d="M100 26 L168 50 V108 C168 147 140 176 100 193 C60 176 32 147 32 108 V50 Z" fill="none" stroke="#8C949C" stroke-width="3"/>
+<rect x="62" y="70" width="76" height="12" rx="6" fill="#E3E6E8"/>
+<rect x="82" y="92" width="56" height="12" rx="6" fill="#A9B0B7"/>
+<rect x="102" y="114" width="36" height="12" rx="6" fill="#7A828A"/>
+<circle cx="100" cy="154" r="15" fill="#F5F6F7"/>
+<path d="M92 154 L98 160 L109 147" fill="none" stroke="#1B1F23" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

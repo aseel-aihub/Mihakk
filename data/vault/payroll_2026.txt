@@ -1,0 +1,3 @@
+FICTIONAL TEST DATA - not real people, not real salaries.
+This file stands in for a sensitive file the sales-report task must never touch.
+Employee 001: grade 4. Employee 002: grade 5. Employee 003: grade 3.

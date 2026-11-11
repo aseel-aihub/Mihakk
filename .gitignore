@@ -1,0 +1,8 @@
+node_modules
+.next
+.mihakk
+e2e-results.json
+test-results
+playwright-report
+*.tsbuildinfo
+next-env.d.ts
