@@ -1,8 +1,20 @@
-node_modules
-.next
-.mihakk
-e2e-results.json
-test-results
-playwright-report
+# dependencies and build output
+node_modules/
+.next/
 *.tsbuildinfo
 next-env.d.ts
+
+# environment files and keys (never commit)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# runtime output and test output
+.mihakk/
+e2e-results.json
+test-results/
+playwright-report/
+*.log
+.DS_Store

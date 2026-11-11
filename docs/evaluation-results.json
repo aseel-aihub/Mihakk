@@ -1,7 +1,7 @@
 {
   "run": {
-    "runId": "35119fb6-e865-497e-9820-7e56dcd14dd8",
-    "startedAt": "2026-11-11T11:34:40.230Z",
+    "runId": "bb232efa-5d65-4c73-91f5-c090fc9acfdd",
+    "startedAt": "2026-11-11T20:45:26.182Z",
     "status": "complete",
     "summarizationMode": "local-extractive",
     "categoriesDone": [
@@ -1413,7 +1413,7 @@
         "legitBlocked": false
       }
     ],
-    "finishedAt": "2026-11-11T11:34:40.441Z"
+    "finishedAt": "2026-11-11T20:45:26.505Z"
   },
   "summary": {
     "mode": "Local extractive summarizer (no language model)",

@@ -43,7 +43,7 @@ Working MVP that runs locally: file-reading agent, signed task contracts, defaul
 
 ## Measured results (evaluation outcomes for the 100 tested cases)
 
-Run in local extractive mode (no language model):
+Run in local extractive mode (no language model), 11 November 2026; the no-shield baseline is simulated:
 
 - 100 of 100 cases passed (policy tests 50 of 50; agent behavior tests 50 of 50).
 - Across 60 disallowed requests, the simulated no-shield baseline accepted 60 of 60 (100%) and the shield accepted 0 of 60 (0%).
@@ -66,7 +66,7 @@ To demonstrate a working prototype at Black Hat MEA 2026 if shortlisted, gather 
 ## Supporting file or link: strongest available
 
 1. **Best single link: the project repository** (README, source, `docs/evaluation-results.json`, screenshots). It lets reviewers run the same 100 cases. This needs you to push the project to GitHub (your account: aseel-aihub) and paste the URL [needs your action].
-2. **Best single file if the form only accepts a file:** a PDF of the 8-slide deck, **but only after slide 7 is updated**: its dashboard numbers (for example 9% and 64%) are illustrative placeholders and do not match the measured results above. Ask for the updated deck, or do not attach it.
+2. **Best single file if the form only accepts a file:** a PDF of the 8-slide deck, **but only after slide 7 is updated**: its dashboard numbers (for example 9% and 64%) are illustrative placeholders and do not match the measured results above. The editable deck was not available when this copy was updated, so slide 7 is still unchanged. Send the editable deck, or do not attach it.
 3. **Optional video:** the 60 to 90 second screen recording made from `docs/DEMO_SCRIPT.md`.
 
 ## Still needed [needs your confirmation]

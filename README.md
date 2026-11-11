@@ -70,7 +70,7 @@ This path has **not** been exercised in the verification record (no key was avai
 
 ## Replace the logo
 
-The logo is served from `public/logo.svg` (and `public/icon.svg`). Replace those files to change it everywhere.
+The logo is served from `public/logo.svg` (and `public/icon.svg`). Replace those files to change it everywhere. The supplied PNG original is kept unchanged in `public/brand/mihakk-logo-original.png`.
 
 ## Project structure
 

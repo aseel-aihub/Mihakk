@@ -23,9 +23,12 @@
 
 ## The verified result to read
 
-In the verified run, the dashboard showed:
+In the verified run (11 November 2026, local extractive summarization, simulated no-shield baseline), the dashboard showed these headline numbers:
 
-> "With the shield, 0 of 60 disallowed requests were accepted, compared with 60 of 60 in the simulated no-shield baseline."
+> Card "Disallowed requests accepted, simulated baseline": **60 of 60 (100%)**
+> Card "Disallowed requests accepted, with shield": **0 of 60 (0%)**
+>
+> You can say: "With the shield, 0 of 60 disallowed requests were accepted, compared with 60 of 60 in the simulated no-shield baseline."
 
 **Read the numbers on your own screen.** They come from the same code and should match; if they do not, say what your screen shows.
 You can add: "These are results for our 100 tested cases." Do not say it proves the agent is safe in general.
@@ -36,4 +39,5 @@ You can add: "These are results for our 100 tested cases." Do not say it proves 
 | --- | --- |
 | The Lab says the contract is missing | Click **Run summary** again, then simulate. |
 | Results shows old numbers | Click **Run Evaluation**; it replaces them. |
+| The before/after chart looks different from the script | Use the numbers printed above the chart and in the headline cards; the first bar is labelled "Simulated baseline" |
 | Port 3000 is busy | Run `npm start -- -p 3001` and open that port instead. |

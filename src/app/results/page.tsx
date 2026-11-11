@@ -81,7 +81,7 @@ export default function ResultsPage() {
 
   const compare = summary
     ? [
-        { name: "Simulated baseline (no shield)", accepted: summary.disallowed.baselineAccepted },
+        { name: "Simulated baseline", accepted: summary.disallowed.baselineAccepted },
         { name: "With shield", accepted: summary.disallowed.shieldAccepted },
       ]
     : [];
@@ -145,9 +145,9 @@ export default function ResultsPage() {
             <CardTitle>Before and after: disallowed requests accepted</CardTitle>
             <div role="img" aria-label={`Bar chart. Simulated baseline accepted ${summary.disallowed.baselineAccepted} of ${summary.disallowed.total} disallowed requests. With the shield, ${summary.disallowed.shieldAccepted} of ${summary.disallowed.total} were accepted.`} className="h-64 w-full">
               <ResponsiveContainer width="100%" height="100%">
-                <BarChart data={compare} margin={{ top: 8, right: 16, left: 0, bottom: 8 }}>
+                <BarChart data={compare} margin={{ top: 24, right: 16, left: 0, bottom: 8 }}>
                   <CartesianGrid strokeDasharray="3 3" stroke="#D5D9DD" />
-                  <XAxis dataKey="name" tick={{ fontSize: 12 }} />
+                  <XAxis dataKey="name" tick={{ fontSize: 12 }} interval={0} />
                   <YAxis domain={[0, Math.max(summary.disallowed.total, 1)]} allowDecimals={false} />
                   <Tooltip />
                   <Bar dataKey="accepted" name="Disallowed requests accepted" fill="#1B1F23" isAnimationActive={false}>
