@@ -28,7 +28,7 @@ Nothing failed in the automated checks. One layout issue was found by eye on the
 | --- | --- |
 | Optional language-model mode (Anthropic, Nebius, Google Gemini) | Request building, response parsing, key handling and error messages are unit-tested with a mocked network, and the Lab was checked to offer the option when a provider is configured (with fake values, no network call). No real key was available here, so no live request to any provider was made; the Nebius base URL and the model names are unconfirmed |
 | Pushing to GitHub | No repository URL or credentials were provided in this run; the work is committed locally only |
-| A public preview link | The sandbox cannot host a public site. Run locally (README) |
+| A public preview link | The owner deployed a free-plan copy at https://mihakk.onrender.com/. It could not be reached from the verification sandbox, so it was not checked by the assistant. |
 | Replit or other hosting | Not tried. Any Node host with a writable folder should work |
 | Windows, macOS, Safari, Firefox | Only Linux and Chromium were tested |
 | Second end-to-end run reused a running server | The last `npm run test:e2e` reused the server on port 3100 that I had rebuilt after the fix (`reuseExistingServer`); the first run built its own |

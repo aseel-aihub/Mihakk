@@ -119,7 +119,7 @@ request; it shows what the shield changes, not how any other product performs.
 - The cases were written together with the detector, so results describe these 100 cases, not every possible attack.
 - Email, deletion and web requests are **simulated**: nothing is ever sent, deleted or fetched.
 - The evaluation run is stored in `.mihakk/last-run.json`, so the host needs a writable folder.
-- No public preview link is provided. Deploy to any Node host that allows a writable folder, or run locally.
+- A free-plan hosted demo is available at https://mihakk.onrender.com/. It sleeps when idle (the first visit can take about a minute), and its saved evaluation result can be reset, so click **Run Evaluation** again if needed. You can also deploy to any Node host that allows a writable folder, or run locally.
 
 ## Live demo
 
