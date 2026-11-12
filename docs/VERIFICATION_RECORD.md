@@ -43,3 +43,20 @@ Nothing failed in the automated checks. One layout issue was found by eye on the
 - Evaluation cases and the detector were written together, so results describe these 100 cases only. The no-shield baseline is simulated.
 - Heuristic rules can flag benign text that looks like an instruction (for example a line that starts with "Admin:"); the evaluation includes a few benign look-alikes, but the rules are not exhaustive.
 - Deck slide 7: the editable presentation was not supplied in this run, so it was not changed. Its figures (for example 9% and 64%) are illustrative placeholders and must be replaced with the verified figures: 100 of 100 cases passed; shield accepted 0 of 60 disallowed requests versus 60 of 60 in the simulated baseline; 20 of 20 legitimate tasks completed, 0 of 20 false blocks (local extractive mode).
+
+## Second verification: macOS (12 November 2026)
+
+Run by the project owner on her own computer, following the README steps. Summarization mode: local extractive (no language model). The no-shield baseline is simulated.
+
+| Item | Result |
+| --- | --- |
+| Environment | macOS 26.6.2 (Apple silicon), Node v26.13.1, npm 11.20.0, Playwright Chromium 158 |
+| `npm ci` | Succeeded (npm printed warnings about 9 dependency vulnerabilities and a deprecated Recharts 2.x; not addressed) |
+| `npm run typecheck` | No errors |
+| `npm test` | 25 of 25 passed |
+| `npm run eval` | 100 of 100 passed; policy 50 of 50; agent behavior 50 of 50; shield accepted 0 of 60 disallowed requests versus 60 of 60 in the simulated baseline; 20 of 20 legitimate tasks completed, 0 of 20 false blocks |
+| `npm run build` | Succeeded |
+| `npm run test:e2e` | 6 of 6 passed |
+| `npm start` | Server started on port 3000 and the site opened in the browser |
+
+Not covered by this run: the optional language-model mode with a real key, Safari and Firefox, a screen reader, and Node 20 or 22 on macOS (the first run in this record used Node 22 on Linux).
