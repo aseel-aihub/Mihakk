@@ -12,6 +12,8 @@ Its core workflow is **Test → Protect → Re-evaluate**:
 
 The current release is English only. Arabic and Saudi dialect support is on the roadmap (see About page).
 
+Live Demo: https://mihakk.onrender.com/
+
 ## Requirements
 
 - Node.js 20 or newer (verified on Node 22) and npm
