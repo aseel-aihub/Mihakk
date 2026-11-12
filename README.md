@@ -1,4 +1,4 @@
-# Mihakk (working name)
+# Mihakk 
 
 Mihakk helps teams check how safely an AI agent handles files before it is trusted with real work.
 Its core workflow is **Test → Protect → Re-evaluate**:
