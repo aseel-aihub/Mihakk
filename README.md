@@ -120,3 +120,8 @@ request; it shows what the shield changes, not how any other product performs.
 - Email, deletion and web requests are **simulated**: nothing is ever sent, deleted or fetched.
 - The evaluation run is stored in `.mihakk/last-run.json`, so the host needs a writable folder.
 - No public preview link is provided. Deploy to any Node host that allows a writable folder, or run locally.
+
+## Live demo
+
+A hosted copy of the demo runs at https://mihakk.onrender.com/ (free hosting plan).
+The first visit after a period of inactivity can take about a minute to wake up, and the saved evaluation result may be reset, so click **Run Evaluation** again if the Results page says it has not run. The hosted copy uses the local extractive summarizer only; no language-model key is configured on it.

@@ -72,3 +72,7 @@ To demonstrate a working prototype at Black Hat MEA 2026 if shortlisted, gather 
 ## Still needed [needs your confirmation]
 
 Team name and members, contact details, and the repository or video link.
+
+## Live demo link
+
+https://mihakk.onrender.com/ (hosted on a free plan: it may need about a minute to wake up on the first visit, and the Results page may need **Run Evaluation** to be clicked again). Local extractive mode only; no language-model key is set on the hosted copy. [Not yet checked by the assistant: the owner should open the link and run the full flow before submitting.]
