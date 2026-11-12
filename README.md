@@ -121,7 +121,3 @@ request; it shows what the shield changes, not how any other product performs.
 - The evaluation run is stored in `.mihakk/last-run.json`, so the host needs a writable folder.
 - A free-plan hosted demo is available at https://mihakk.onrender.com/. It sleeps when idle (the first visit can take about a minute), and its saved evaluation result can be reset, so click **Run Evaluation** again if needed. You can also deploy to any Node host that allows a writable folder, or run locally.
 
-## Live demo
-
-A hosted copy of the demo runs at https://mihakk.onrender.com/ (free hosting plan).
-The first visit after a period of inactivity can take about a minute to wake up, and the saved evaluation result may be reset, so click **Run Evaluation** again if the Results page says it has not run. The hosted copy uses the local extractive summarizer only; no language-model key is configured on it.
