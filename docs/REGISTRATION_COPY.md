@@ -28,7 +28,7 @@ Teams that plan to use AI agents on internal files (government entities, enterpr
 
 ## Technologies
 
-Next.js (App Router) and TypeScript, Tailwind CSS with shadcn/ui-style components, Zod input validation, Recharts, Vitest and Playwright tests. Signed contracts use HMAC-SHA256. PDF text extraction uses the unpdf library. Summaries use a local extractive method that needs no API key; an optional language-model mode is built but disabled by default and requires explicit consent [not exercised in testing].
+Next.js (App Router) and TypeScript, Tailwind CSS with shadcn/ui-style components, Zod input validation, Recharts, Vitest and Playwright tests. Signed contracts use HMAC-SHA256. PDF text extraction uses the unpdf library. Summaries use a local extractive method that needs no API key; an optional language-model mode (Anthropic, Nebius or Google Gemini, chosen by server settings) is built but disabled by default and requires explicit consent [unit-tested with a mocked network; not run against a live provider].
 
 ## Innovation
 

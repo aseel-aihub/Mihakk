@@ -35,7 +35,7 @@ npm start            # open http://localhost:3000
 
 ```bash
 npm run typecheck    # TypeScript
-npm test             # Vitest: policy, extraction, summarizer and evaluation tests (17 tests)
+npm test             # Vitest: policy, extraction, summarizer, evaluation and provider tests
 npm run eval         # runs all 100 evaluation cases in the terminal and prints the real results
 ```
 
@@ -57,16 +57,27 @@ The full recording script is in `docs/DEMO_SCRIPT.md`.
 
 ## Optional: language-model summaries
 
-Local extractive mode is the default and needs no key. To enable the optional mode, set both variables on the server
-(the key never reaches the browser) and restart:
+Local extractive mode is the default and needs no key. To enable the optional mode, choose one provider and set the variables
+on the server (the key never reaches the browser). Copy `.env.example` to `.env.local` (ignored by Git) or export them, then restart:
+
+| Provider | `MIHAKK_LLM_PROVIDER` | Key variable | Notes |
+| --- | --- | --- | --- |
+| Anthropic | `anthropic` | `ANTHROPIC_API_KEY` | Used automatically if only this key is set (older setups) |
+| Nebius | `nebius` | `NEBIUS_API_KEY` | OpenAI-compatible; set `MIHAKK_LLM_BASE_URL` if your account uses a different base URL |
+| Google Gemini | `gemini` | `GEMINI_API_KEY` | |
+
+Also set `MIHAKK_LLM_MODEL` to a model name your account can use. Example:
 
 ```bash
-export ANTHROPIC_API_KEY=...        # your key
-export MIHAKK_LLM_MODEL=...         # model name your account can use
+export MIHAKK_LLM_PROVIDER=gemini
+export GEMINI_API_KEY=...           # your key, never commit it
+export MIHAKK_LLM_MODEL=...
 ```
 
 The Lab then offers "Language model (optional)" and requires an explicit consent checkbox before any file content is sent.
-This path has **not** been exercised in the verification record (no key was available).
+The evaluation dashboard always uses the local extractive summarizer, so the 100 cases do not depend on a provider.
+Request building and response parsing for all three providers are covered by unit tests with a mocked network;
+they have **not** been run against the live services (see `docs/VERIFICATION_RECORD.md`).
 
 ## Replace the logo
 

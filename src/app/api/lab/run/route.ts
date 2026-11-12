@@ -4,7 +4,7 @@ import { z } from "zod";
 import { runFileAgent } from "@/lib/agent";
 import { issueContract } from "@/lib/contract";
 import { MAX_BYTES } from "@/lib/extract";
-import { llmAvailable, summarizeWithLlm } from "@/lib/llm";
+import { llmAvailable, llmProviderLabel, summarizeWithLlm } from "@/lib/llm";
 import { baselineAuthorize, plainExplanation } from "@/lib/policy";
 import { loadSample, SAMPLE_NAME } from "@/lib/samples";
 import { getSecret } from "@/lib/secret";
@@ -74,6 +74,6 @@ export async function POST(req: Request) {
     contract: { id: contract.id, task: contract.task, allowedAction: contract.allowedAction, allowedResource: contract.allowedResource, issuedAt: contract.issuedAt, expiresAt: contract.expiresAt },
     result: { ...result, log: withExplanations },
     baselineDerived,
-    modeLabel: result.summary?.mode === "language-model" ? "Language model (external provider, user consented)" : "Local extractive (no language model, no network)",
+    modeLabel: result.summary?.mode === "language-model" ? `Language model (${llmProviderLabel() ?? "external provider"}, user consented)` : "Local extractive (no language model, no network)",
   });
 }
