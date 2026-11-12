@@ -12,7 +12,7 @@ Its core workflow is **Test → Protect → Re-evaluate**:
 
 The current release is English only. Arabic and Saudi dialect support is on the roadmap (see About page).
 
-Live Demo: https://mihakk.onrender.com/
+Live demo: https://mihakk.onrender.com/
 
 ## Requirements
 
